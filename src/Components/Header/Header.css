@@ -1,0 +1,36 @@
+.header-container {
+  max-width: 100%;
+  min-width: 120px;
+  padding: 0 20px;
+  background: #1c1c1c;
+  box-sizing: border-box;
+}
+
+.header-heading {
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header-logo {
+  /* width: 250px; */
+  height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: 20px;
+  filter: invert(1);
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  .header-heading {
+    flex-direction: column;
+    padding: 10px 0px 0px 0px;
+  }
+  .header-logo {
+    margin-top: 0px;
+  }
+}
